@@ -1,0 +1,74 @@
+/**
+ * Plugin: Maester Toolkit
+ * Addon: Course Category
+ */
+
+.maester-course-category-list{
+	margin: 0 -15px;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	li{
+		width: 100%;
+		padding: 0 15px;
+		margin-bottom: 50px;
+		@include breakpoint(lg){
+			margin-bottom: 30px;
+		}
+	}
+	&.column-2 li{
+		width: 50%;
+		@include breakpoint(xs){
+			width: 100%;
+		}
+	}
+	&.column-3 li{
+		width: 33.3333%;
+		@include breakpoint(md){
+			width: 50%;
+		}
+		@include breakpoint(xs){
+			width: 100%;
+		}
+	}
+	&.column-4 li{
+		width: 25%;
+		@include breakpoint(md){
+			width: 50%;
+		}
+		@include breakpoint(xs){
+			width: 100%;
+		}
+	}
+	&.column-5 li{
+		width: 20%;
+		@include breakpoint(md){
+			width: 50%;
+		}
+		@include breakpoint(xs){
+			width: 100%;
+		}
+	}
+
+
+
+	li a{
+		display: block;
+		text-align: center;
+		img{
+			display: block;
+			width: 100%;
+			border-radius: 4px;
+			transition: 200ms;
+		}
+		&:hover img{
+			box-shadow: 0 4px 15px rgba(#000, .20);
+		}
+		h4{
+			margin: 25px 0 0;
+			font-size: 16px;
+		}
+	}
+}
+
